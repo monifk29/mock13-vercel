@@ -3,6 +3,8 @@ import { Input } from "@chakra-ui/react";
 import { useDispatch } from "react-redux";
 import { postData } from "../redux/action";
 
+import styles from "../styles/Form.module.css"
+
 const Form = () => {
   const [name, setName] = useState();
   const [pos, setPos] = useState();
@@ -25,29 +27,29 @@ const Form = () => {
   };
 
   return (
-    <div style={{ width: "50%", margin: "auto" }}>
-      <Input
+    <div className={styles.formdiv} style={{ width: "50%", margin: "auto" }}>
+      <Input className={styles.inputall}
         onChange={(e) => {
           setName(e.target.value);
         }}
         size="md"
         placeholder="Company Name"
       />
-      <Input
+      <Input className={styles.inputall}
         onChange={(e) => {
           setPos(e.target.value);
         }}
         size="md"
         placeholder="Position "
       />
-      <Input
+      <Input className={styles.inputall}
         onChange={(e) => {
           setContract(e.target.value);
         }}
         size="md"
         placeholder="Contract"
       />
-      <Input
+      <Input className={styles.inputall}
         onChange={(e) => {
           setLoc(e.target.value);
         }}
@@ -55,7 +57,7 @@ const Form = () => {
         placeholder="Location"
       />
 
-      <button onClick={handleSub}>Submit</button>
+      <button style={{marginTop : "20px" , backgroundColor : "teal", padding : "0px 10px", color : "white"}} onClick={handleSub}>Submit</button>
     </div>
   );
 };
