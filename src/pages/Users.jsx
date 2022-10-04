@@ -68,7 +68,7 @@ const Users = () => {
 
       <div className={styles.filerDiv}>
 
-<p>Filter by Contract</p>
+<p className={styles.filterPara} >Filter by Contract</p>
 
         <select onChange={(e) => handleChangeCon(e.target.value)}  className={styles.contractSel}>
           <option >None</option>

@@ -33,7 +33,16 @@
   
 }
 
-select{
+
+
+.contractSel{
+    margin-left: 15px;
     padding: 10px 20px;
-    /* margin-left: 15px; */
+    color: teal;
+}
+
+.filterPara{
+    color: teal;
+    font-size: medium;
+    text-decoration: underline;
 }
